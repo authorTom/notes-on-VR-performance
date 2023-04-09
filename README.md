@@ -4,3 +4,34 @@ Performance is crucial in VR content creation to prevent user discomfort and mot
 Creating performant VR content can be challenging, as PCVR (a high-powered gaming PC) and standalone VR (a low powered headset) require different approaches. In these notes, I focus on optimising for standalone using the Oculus Quest headsets. Different headsets have different requirements, and several factors impact performance, including required minimum frame rates, high resolutions, the need to render each frame twice, power constraints, limited processing power, and the effects of heat and thermal throttling. <br />
 <br />
 Long build times will hinder productivity. Testing on the standalone headset is essential as mobile hardware has far less power and fewer GPU features than a desktop PC. Although developing for VR introduces unique challenges, many of the tips, tricks, and solutions from the flat game world apply. These notes cover the basics to help get you started. <br />
+<br />
+# Table of contents
+
+- [When to optimise?](#when-to-optimise)
+- [Frame Rate Vs Frame Time Vs Frame Budget](#frame-rate-vs-frame-time-vs-frame-budget)
+- [Profiling](#profiling)
+  - [CPU Bound](#cpu-bound)
+  - [GPU Bound](#gpu-bound)
+- [Tip 1 - Reduce Drawcalls](#tip-1---reduce-drawcalls)
+- [Tip 2 - Textures](#tip-2---textures)
+- [Tip 3 - Lighting](#tip-3---lighting)
+- [Tip 4 - Transparency & Blending](#tip-4---transparency--blending)
+- [Tip 5 - Shaders](#tip-5---shaders)
+- [Tip 6 - Antialiasing](#tip-6---antialiasing)
+- [Tip 7 - Occlusion culling](#tip-7---occlusion-culling)
+- [Tip 8 - Fixed Foveated Rendering](#tip-8---fixed-foveated-rendering)
+- [Resources](#resources)
+## When to optimise?
+## Frame Rate Vs Frame Time Vs Frame Budget
+## Profiling
+### CPU Bound
+### GPU Bound
+## Tip 1 - Reduce Drawcalls
+## Tip 2 - Textures
+## Tip 3 - Lighting
+## Tip 4 - Transparency & Blending
+## Tip 5 - Shaders
+## Tip 6 - Antialiasing
+## Tip 7 - Occlusion culling
+## Tip 8 - Fixed Foveated Rendering
+## Resources
