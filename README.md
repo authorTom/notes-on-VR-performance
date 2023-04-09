@@ -35,3 +35,4 @@ Long build times will hinder productivity. Testing on the standalone headset is 
 ## Tip 7 - Occlusion culling
 ## Tip 8 - Fixed Foveated Rendering
 ## Resources
+[➡️ My list of XR performance resources](https://github.com/authorTom/ultimate-XR-dev-guide#performance-and-benchmarking)
