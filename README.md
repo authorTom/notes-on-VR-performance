@@ -7,7 +7,7 @@ Long build times will hinder productivity. Testing on the standalone headset is 
 <br />
 # Table of contents
 
-- [When to optimise?](#when-to-optimise)
+- [When to Optimise?](#when-to-optimise)
 - [Frame Rate Vs Frame Time Vs Frame Budget](#frame-rate-vs-frame-time-vs-frame-budget)
 - [Profiling](#profiling)
   - [CPU Bound](#cpu-bound)
@@ -23,7 +23,7 @@ Long build times will hinder productivity. Testing on the standalone headset is 
 - [Resources](#resources)
 - [Issues](#issues)
 - [My Other Projects](#my-other-projects)
-## When to optimise?
+## When to Optimise?
 ## Frame Rate Vs Frame Time Vs Frame Budget
 ## Profiling
 ### CPU Bound
