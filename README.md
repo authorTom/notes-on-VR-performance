@@ -8,7 +8,7 @@ Long build times will hinder productivity. Testing on the standalone headset is 
 # Table of contents
 
 - [When to Optimise?](#when-to-optimise)
-- [Frame Rate Vs Frame Time Vs Frame Budget](#frame-rate-vs-frame-time-vs-frame-budget)
+- [Frame Rate Vs Frame Time](#frame-rate-vs-frame-time)
 - [Profiling](#profiling)
   - [CPU Bound](#cpu-bound)
   - [GPU Bound](#gpu-bound)
@@ -24,7 +24,12 @@ Long build times will hinder productivity. Testing on the standalone headset is 
 - [Issues](#issues)
 - [My Other Projects](#my-other-projects)
 ## When to Optimise?
-## Frame Rate Vs Frame Time Vs Frame Budget
+## Frame Rate Vs Frame Time
+* **Frame rate** is the number of frames displayed per second (FPS). It is calculated by dividing the total number of frames displayed by the total amount of time taken to display them. <br />
+* **Frame time** is calculated by dividing the total time it takes to render a frame by the number of frames rendered. It is typically measured in milliseconds (ms). <br />
+* Let's say a game runs at 60 frames per second (fps), and it takes a total of 16.67 milliseconds to render each frame. This means that the frame time for that game is 16.67 milliseconds / frame. <br />
+* Frame time is a better measure of performance than frame rate because it takes into account the consistency of the frame rate. A high frame rate does not necessarily mean that the game will be smooth, if the frame time is inconsistent. For example, a game may have a frame rate of 60fps, but if the frame time varies from 16ms to 33ms, the game will not be smooth. <br />
+* Frame time is useful for diagnosing performance issues. If you are experiencing stuttering or other performance problems, you can use frame time to identify the source of the problem. <br />
 ## Profiling
 ### CPU Bound
 ### GPU Bound
