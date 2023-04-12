@@ -36,6 +36,15 @@ Long build times will hinder productivity. Testing on the standalone headset is 
    |90|8.3|
 * Frame time is a better measure of performance than frame rate because it takes into account the consistency of the frame rate. A high frame rate does not necessarily mean that the game will be smooth, if the frame time is inconsistent. For example, a game may have a frame rate of 60fps, but if the frame time varies from 16ms to 33ms, the game will not be smooth. <br />
 * Frame time is useful for diagnosing performance issues. If you are experiencing stuttering or other performance problems, you can use frame time to identify the source of the problem. <br />
+* Headsets have recommended frame rates. When the frame rate drops, it's likely to cause disorientation and nausea for the user. Maintaining a minimum frame rate (reducing frame times) can be particularly challenging on a standalone headset. <br />
+  <br />
+  | Headset | Frame Rate |
+  |---------|--------------------------------|
+  |HTC Vive|90|
+  |Quest 1 |72|
+  |Quest 2 |120|
+  |Quest Pro|90|
+  |Valve Index|upto 144|
 ## Profiling
 ### CPU Bound
 ### GPU Bound
