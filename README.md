@@ -50,6 +50,25 @@ Long build times will hinder productivity. Testing on the standalone headset is 
   |Quest Pro|90|
   |Valve Index|upto 144|
 ## Profiling
+A profiler will show you where your game/application is slow. Showing which frame times are taking longer to render. There are several solutions to choose from when profiling. As I develop using Unreal Engine (UE) with a Quest headset, I have a preference for RenderDoc and UE's built in performance suite named Unreal Insights. <br />
+<br />
+[🆓⚒️ Oculus Debug Tool](https://developer.oculus.com/documentation/native/pc/dg-debug-tool/?locale=en_GB) <br />
+[🆓⚒️ RenderDoc](https://renderdoc.org/) <br />
+[🆓⚒️ OVR Metrics Tools](https://developer.oculus.com/downloads/package/ovr-metrics-tool/) <br />
+[🆓⚒️ Android GPU Inspector (AGI) - for Android based HMDs](https://developer.android.com/agi) <br />
+[🆓⚒️ ARM: Streamline Performance Analyzer](https://developer.arm.com/Tools%20and%20Software/Streamline%20Performance%20Analyzer) <br />
+[🆓⚒️ SteamVR Frame Timing](https://developer.valvesoftware.com/wiki/SteamVR/Frame_Timing) <br />
+[🆓⚒️ NVIDIA Visual Profiler](https://developer.nvidia.com/nvidia-visual-profiler) <br />
+[🆓⚒️ NVIDIA Nsight Graphics](https://developer.nvidia.com/nsight-graphics) <br />
+[🆓⚒️ NVIDIA VR Capture & Replay - Early Access](https://developer.nvidia.com/vcr-early-access) <br />
+[🆓⚒️ NVIDIA Performance Analysis Tools](https://developer.nvidia.com/performance-analysis-tools) <br />
+[🆓⚒️ AMD Radeon GPU Profiler](https://gpuopen.com/rgp/) <br />
+[🆓⚒️ Intel® Graphics Performance Analyzers:](https://www.intel.com/content/www/us/en/developer/tools/graphics-performance-analyzers/overview.html) <br />
+[🆓⚒️ Intel® VTune™ Profiler](https://www.intel.com/content/www/us/en/developer/tools/oneapi/vtune-profiler.html#gs.qs0mup) <br />
+[🆓⚒️ PVRTune](https://developer.imaginationtech.com/pvrtune/) <br />
+[⚒️ Superluminal](https://superluminal.eu/) <br />
+<br />
+➡️ [See my resourses on performance](https://github.com/authorTom/ultimate-XR-dev-guide/blob/main/README.md#performance-and-benchmarking)
 ### CPU Bound
 ### GPU Bound
 ## Tip 1 - Reduce Drawcalls
