@@ -50,8 +50,9 @@ Long build times will hinder productivity. Testing on the standalone headset is 
   |Quest Pro|90|
   |Valve Index|upto 144|
 ## Profiling
-A profiler will show you where your game/application is slow. Showing which frame times are taking longer to render. There are several solutions to choose from when profiling. As I develop using Unreal Engine (UE) with a Quest headset, I have a preference for RenderDoc and UE's built in performance suite named Unreal Insights. <br />
+Profiling tools can help identify where a game or application is experiencing slow performance by highlighting the frame times that are taking longer to render. There are a variety of profiling solutions available to choose from. Personally, as someone who develops using Unreal Engine (UE) with a Quest headset, I prefer to use RenderDoc and UE's built-in performance suite, Unreal Insights. <br />
 <br />
+### Profiling Tools
 [🆓⚒️ Oculus Debug Tool](https://developer.oculus.com/documentation/native/pc/dg-debug-tool/?locale=en_GB) <br />
 [🆓⚒️ RenderDoc](https://renderdoc.org/) <br />
 [🆓⚒️ OVR Metrics Tools](https://developer.oculus.com/downloads/package/ovr-metrics-tool/) <br />
