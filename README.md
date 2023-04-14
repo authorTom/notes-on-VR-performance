@@ -24,10 +24,11 @@ Long build times will hinder productivity. Testing on the standalone headset is 
 - [Issues](#issues)
 - [My Other Projects](#my-other-projects)
 ## When to Optimise?
-* If you can optimise from the beginning, do it!
-* Don’t be too premature and be performance conscious during development.
-* Optimise if you are not hitting the recommended frame rate.
-* Some features look amazing, but are they worth it? VR is very performance limited.  
+* Optimise from the beginning!
+* Be performance conscious during development - think about scene complexity, do I need to add this in? is it worth the performance hit?
+* A good time to optimise is when you are not hitting the desired frame rate.
+* Some features look amazing, but are they worth it?
+* VR is very performance limited  
 ## Frame Rate Vs Frame Time
 * **Frame rate** is the number of frames displayed per second (FPS). It is calculated by dividing the total number of frames displayed by the total amount of time taken to display them. <br />
 * **Frame time** is calculated by dividing the total time it takes to render a frame by the number of frames rendered. It is typically measured in milliseconds (ms). <br />
@@ -52,7 +53,7 @@ Long build times will hinder productivity. Testing on the standalone headset is 
 ## Profiling
 Profiling tools can help identify where a game or application is experiencing slow performance by highlighting the frame times that are taking longer to render. There are a variety of profiling solutions available to choose from. Personally, as someone who develops using Unreal Engine (UE) with a Quest headset, I prefer to use RenderDoc and UE's built-in performance suite, Unreal Insights. <br />
 <br />
-### Profiling Tools
+### Profiling Tools (lots of options - can be dependent on headset and graphics chipsets)
 [🆓⚒️ Oculus Debug Tool](https://developer.oculus.com/documentation/native/pc/dg-debug-tool/?locale=en_GB) <br />
 [🆓⚒️ RenderDoc](https://renderdoc.org/) <br />
 [🆓⚒️ OVR Metrics Tools](https://developer.oculus.com/downloads/package/ovr-metrics-tool/) <br />
