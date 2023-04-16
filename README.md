@@ -9,9 +9,7 @@ Long build times will hinder productivity. Testing on the standalone headset is 
 
 - [When to Optimise?](#when-to-optimise)
 - [Frame Rate Vs Frame Time](#frame-rate-vs-frame-time)
-- [Profiling](#profiling)
-  - [CPU Bound](#cpu-bound)
-  - [GPU Bound](#gpu-bound)
+- [Profiling](#profiling)  
 - [Tip 1 - Reduce Drawcalls](#tip-1---reduce-drawcalls)
 - [Tip 2 - Textures](#tip-2---textures)
 - [Tip 3 - Lighting](#tip-3---lighting)
@@ -72,8 +70,13 @@ Long build times will hinder productivity. Testing on the standalone headset is 
 
 ⭐ [See my resourses on performance](https://github.com/authorTom/ultimate-XR-dev-guide/blob/main/README.md#performance-and-benchmarking)
 <br />
-### CPU Bound
-### GPU Bound
+### CPU or GPU Bound?
+|**CPU Bound** <br /> <br /> Performance primarily limited by the CPU's processing power <br /> Factors affecting CPU bound performance||**GPU Bound** <br /> <br /> Performance limited by the GPU's rendering capabilities. <br /> Factors affecting GPU bound performance|
+|:-----------------|----|:-----------------|
+|AI/physics calculations||Texture quality/resolution|
+|Animation/character controller logic||Shader complexity|
+|Collision detection||Particle effects|
+|Level/asset streaming||Geometry complexity|
 ## Tip 1 - Reduce Drawcalls
 ## Tip 2 - Textures
 ## Tip 3 - Lighting
