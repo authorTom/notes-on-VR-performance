@@ -5,22 +5,6 @@ Creating performant VR content can be challenging, as PCVR (high-powered gaming 
 <br />
 Long build times will hinder productivity. Testing on the standalone headset is essential as mobile hardware has far less power and fewer GPU features than a desktop PC. Although developing for VR introduces unique challenges, many of the tips, tricks, and solutions from the flat game world apply. These notes cover the basics to help get you started. <br />
 <br />
-# Table of contents
-
-- [When to Optimise?](#when-to-optimise)
-- [Frame Rate Vs Frame Time](#frame-rate-vs-frame-time)
-- [Profiling](#profiling)  
-- [Tip 1 - Reduce Drawcalls](#tip-1---reduce-drawcalls)
-- [Tip 2 - Textures](#tip-2---textures)
-- [Tip 3 - Lighting](#tip-3---lighting)
-- [Tip 4 - Transparency & Blending](#tip-4---transparency--blending)
-- [Tip 5 - Shaders](#tip-5---shaders)
-- [Tip 6 - Antialiasing](#tip-6---antialiasing)
-- [Tip 7 - Occlusion culling](#tip-7---occlusion-culling)
-- [Tip 8 - Fixed Foveated Rendering](#tip-8---fixed-foveated-rendering)
-- [Resources](#resources)
-- [Issues](#issues)
-- [My Other Projects](#my-other-projects)
 ## When to Optimise?
 * Optimise from the beginning!
 * Be performance conscious during development - think about scene complexity, do I need to add this in? is it worth the performance hit?
@@ -71,7 +55,7 @@ Long build times will hinder productivity. Testing on the standalone headset is 
 ⭐ [See my resourses on performance](https://github.com/authorTom/ultimate-XR-dev-guide/blob/main/README.md#performance-and-benchmarking)
 <br />
 ### CPU or GPU Bound?
-The first question to ask is; is it CPU or GPU bound? <br />
+The first questions to ask yourself; Whats causing the problem? is it CPU or GPU bound? <br />
 ```
 To display frame rate in UE Editor
 CTL + Shift + H
