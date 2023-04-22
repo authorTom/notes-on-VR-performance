@@ -112,12 +112,35 @@ Possible solutions <br />
 * Reduce draw calls (batching draw calls)
 * Implement a Level of Detail (LOD) system
 
-RenderDoc is great for this! <br />
+Use a profiler to isolate problems. <br />
+Change one thing at a time and re-profile. Test, test and test some more. Making small iterations is a good strategy for identifying problems. <br />
+If fragment bound, optimise shaders to address pixel complexity. <br />
 
-If an app is fragment, optimise shaders to address pixel complexity. <br />
+## Performance on Standalone VR
+When developing for standalone VR get a feel for the numbers. Look at headset recommendations and limitations.
+<br />
+
+| Platform | Draw Calls | Description |
+|-----|-----|-----|
+| Quest 1 | 50-150 |Busy Simulation|
+| Quest 1 | 150-250 |Medium Simulation|
+| Quest 1 | 200-400 |Light Simulation|
+| Quest 2 | 80-200 |Busy Simulation|
+| Quest 2 | 200-300 |Medium Simulation|
+| Quest 2 | 400-600 | Light Simulation|
+
+Both Quest 1 & 2 have a recommended minimum of 72FPS. <br/>
+
+| Platform | Triangle Count |
+|-----|-----|
+| Quest 1 | 350k-500k |
+| Quest 2 | 750k-1M |
+
+Data taken from [Meta](https://developer.oculus.com/documentation/unreal/unreal-debug-android/)
+<br />
 
 ## Tip 1 - Reduce Drawcalls
-## Tip 2 - Textures
+## Tip 2 - Textures & Materials
 ## Tip 3 - Lighting
 ## Tip 4 - Transparency & Blending
 ## Tip 5 - Shaders
