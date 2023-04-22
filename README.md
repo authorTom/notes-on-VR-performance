@@ -85,10 +85,8 @@ Performance primarily limited by the CPU's processing power can be caused by: <b
 * Level/asset streaming
 
 A straightforward method to assess this is by temporarily disabling the rendering process, which eliminates the cost of the render pipeline. Monitor the application's framerate and the time taken to complete each frame in milliseconds. If performance remains unchanged, it is likely that the issue is CPU-bound. However, if performance is significantly impacted, the GPU is likely the cause. <br />
-```
-Unreal Insights for CPU Performance
-Tools -> Unreal Insights
-```
+<br />
+[Getting started with Unreal Insights (UE5)](https://docs.unrealengine.com/5.0/en-US/trace-in-unreal-engine-5/)
 
 **GPU Bound** <br />
 Performance limited by the GPU's rendering capabilities can be caused by: <br />
@@ -100,7 +98,7 @@ Performance limited by the GPU's rendering capabilities can be caused by: <br />
 To determine whether the performance issue stems from a vertex or fragment-related problem, attempt rendering fewer pixels by setting the render scale to 0.01. This approach will reduce the number of fragments rendered while maintaining the complexity. <br />
 ```
 Unreal profiler for the GPU
-CTRL + Shift + ,
+CTRL + Shift + Comma
 ```
 Common causes of vertex bound performance <br />
 * Culling objects are taking too long
