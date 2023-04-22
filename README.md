@@ -9,7 +9,7 @@ Long build times will hinder productivity. Testing on the standalone headset is 
 * Be performance conscious during development - think about scene complexity, do I need to add this in? is it worth the performance hit?
 * A good time to optimise is when you are not hitting the desired frame rate.
 * Some features look amazing, but are they worth it? (each frame has a budget)
-* VR is very performance limited  
+* At the moment standalone VR is very very performance limited  
 ## Frame Rate Vs Frame Time
 * **Frame rate** is the number of frames displayed per second (FPS). It is calculated by dividing the total number of frames displayed by the total amount of time taken to display them. <br />
 * **Frame time** is calculated by dividing the total time it takes to render a frame by the number of frames rendered. It is typically measured in milliseconds (ms). <br />
