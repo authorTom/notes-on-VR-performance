@@ -71,12 +71,51 @@ Long build times will hinder productivity. Testing on the standalone headset is 
 ⭐ [See my resourses on performance](https://github.com/authorTom/ultimate-XR-dev-guide/blob/main/README.md#performance-and-benchmarking)
 <br />
 ### CPU or GPU Bound?
-|**CPU Bound** <br /> <br /> Performance primarily limited by the CPU's processing power <br /> Factors affecting CPU bound performance||**GPU Bound** <br /> <br /> Performance limited by the GPU's rendering capabilities. <br /> Factors affecting GPU bound performance|
-|:-----------------|----|:-----------------|
-|AI/physics calculations||Texture quality/resolution|
-|Animation/character controller logic||Shader complexity|
-|Collision detection||Particle effects|
-|Level/asset streaming||Geometry complexity|
+The first question to ask is; is it CPU or GPU bound? <br />
+```
+To display frame rate in UE Editor
+CTL + Shift + H
+```
+
+**CPU Bound** <br />
+Performance primarily limited by the CPU's processing power can be caused by: <br />
+* AI/physics calculations
+* Animation/character controller logic
+* Collision detection
+* Level/asset streaming
+
+A straightforward method to assess this is by temporarily disabling the rendering process, which eliminates the cost of the render pipeline. Monitor the application's framerate and the time taken to complete each frame in milliseconds. If performance remains unchanged, it is likely that the issue is CPU-bound. However, if performance is significantly impacted, the GPU is likely the cause. <br />
+```
+Unreal Insights for CPU Performance
+Tools -> Unreal Insights
+```
+
+**GPU Bound** <br />
+Performance limited by the GPU's rendering capabilities can be caused by: <br />
+* Scene complexity (vertex)
+* Shader complexity (fragment)
+* Texture quality/resolution
+* Particle effects
+
+To determine whether the performance issue stems from a vertex or fragment-related problem, attempt rendering fewer pixels by setting the render scale to 0.01. This approach will reduce the number of fragments rendered while maintaining the complexity. <br />
+```
+Unreal profiler for the GPU
+CTRL + Shift + ,
+```
+Common causes of vertex bound performance <br />
+* Culling objects are taking too long
+* Too many draw calls are being issued
+* Too many vertices are being rendered
+
+Possible solutions <br />
+* Simplify complex geometry
+* Reduce draw calls (batching draw calls)
+* Implement a Level of Detail (LOD) system
+
+RenderDoc is great for this! <br />
+
+If an app is fragment, optimise shaders to address pixel complexity. <br />
+
 ## Tip 1 - Reduce Drawcalls
 ## Tip 2 - Textures
 ## Tip 3 - Lighting
