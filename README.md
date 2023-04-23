@@ -57,7 +57,7 @@ Lengthy build times can stifle productivity and standalone headset testing is vi
 ### CPU or GPU Bound?
 The first questions to ask yourself; Whats causing the problem? is it CPU or GPU bound? <br />
 ```
-To display frame rate in UE Editor
+Small tip: display frame rate in UE Editor
 CTL + Shift + H
 ```
 
@@ -121,7 +121,18 @@ Both Quest 1 & 2 have a recommended minimum of 72FPS. <br/>
 Data taken from [Meta](https://developer.oculus.com/documentation/unreal/unreal-debug-android/)
 <br />
 
-## Tip 1 - Reduce Drawcalls
+## Tip 1 - Reduce Draw Calls
+A draw call is a command to the GPU, instructing it to render a specific set of graphical elements, such as textures or polygons, onto the screen. <br />
+* Less is better. Thresholds are dependent on headset specifications. 
+* When developing for Quest 2 some recommend targeting draw calls <100 per frame.
+
+#### Solution - Batching draw calls
+A big restriction with batching is that you need to use the same texture(s). You can't have different textures for the same original draw call. <br />
+   * Static batching
+   * Dynamic batching
+#### Solution - GPU instancing
+<br />
+
 ## Tip 2 - Textures & Materials
 ## Tip 3 - Lighting
 ## Tip 4 - Transparency & Blending
