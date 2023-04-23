@@ -1,9 +1,10 @@
 # Notes on VR Performance
-Performance is crucial in VR content creation to prevent user discomfort and motion sickness. However, ensuring smooth operation and reasonable frame rates is often an afterthought. When it comes to VR development, performance should be at the forefront due to the potential for low frame rates, or more accurately frame times, to cause user discomfort. <br />
-<br />
-Creating performant VR content can be challenging, as PCVR (high-powered gaming PC) and standalone VR (low powered headset) require different approaches. In these notes, I focus on optimising for standalone using the Oculus Quest headsets. Different headsets have different requirements, and several factors impact performance, including required minimum frame rates, high resolutions, the need to render each frame twice, power constraints, limited processing power, and the effects of heat and thermal throttling. <br />
-<br />
-Long build times will hinder productivity. Testing on the standalone headset is essential as mobile hardware has far less power and fewer GPU features than a desktop PC. Although developing for VR introduces unique challenges, many of the tips, tricks, and solutions from the flat game world apply. These notes cover the basics to help get you started. <br />
+Performance is key in creating good VR content, warding off user discomfort, motion sickness, and boosting realism. Smooth operation and sensible frame rates, often neglected, must take centre stage in VR development. Low frame rates—or frame times—can lead to poor user experiences and motion sickness. <br />
+
+Crafting high-performance content is no easy task, with PCVR (powerful gaming PCs) and standalone VR (modest mobile headsets) demanding distinct approaches. These notes focus on standalone optimisation, specifically for the Oculus Quest ecosystem. Note, different headsets carry unique requirements. Performance hinges on numerous factors: higher resolutions, double-rendered frames, power constraints, limited processing, rendering power, and thermal throttling's weight. <br />
+
+Lengthy build times can stifle productivity and standalone headset testing is vital. Despite unique challenges, VR development benefits from the many flat game world performance gaining solutions. <br />
+
 ## When to Optimise?
 * Optimise from the beginning!
 * Be performance conscious during development - think about scene complexity, do I need to add this in? is it worth the performance hit?
