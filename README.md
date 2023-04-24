@@ -137,7 +137,7 @@ Data taken from [Meta](https://developer.oculus.com/documentation/unreal/unreal-
 ```
 Quick Tip: Unreal Engine - to check draw call counts in the editor run the "stat SceneRendering" command.
 ```
-
+![An image of Unreal Engine 5 UI displaying the draw call count](images/UE_mesh_draw_calls.jpg)
 #### Solution - Batching draw calls
    * Static batching
    * Dynamic batching
