@@ -1,9 +1,9 @@
 # Notes on VR Performance
-Performance is key in creating good VR content, warding off user discomfort, motion sickness, and boosting realism. Smooth operation and sensible frame rates, often neglected, must take centre stage in VR development. Low frame rates—or frame times—can lead to poor user experiences and motion sickness. <br />
+Performance is crucial for developing high-quality VR content, as it helps prevent user discomfort, motion sickness, and enhances realism. Ensuring smooth operation and prioritizing optimal frame rates are essential aspects of VR development that are often overlooked. Inadequate frame rates or inconsistent frame times can result in subpar user experiences and contribute to motion sickness. <br />
 
-Crafting high-performance content is no easy task, with PCVR (powerful gaming PCs) and standalone VR (modest mobile headsets) demanding distinct approaches. These notes focus on standalone optimisation, specifically for the Oculus Quest ecosystem. Note, different headsets carry unique requirements. Performance hinges on numerous factors: higher resolutions, double-rendered frames, power constraints, limited processing, rendering power, and thermal throttling's weight. <br />
+Crafting high-performance content is no easy task, PCVR (powerful gaming PCs) and standalone VR (modest mobile headsets) demand different approaches. These notes focus on standalone optimisation, specifically for the Oculus Quest ecosystem. Note, different headsets carry unique requirements. Performance hinges on numerous factors: the need for high resolutions, double frames, power constraints, limited processing, rendering power, and the weight of thermal throttling. <br />
 
-Lengthy build times can stifle productivity and standalone headset testing is vital. Despite unique challenges, VR development benefits from the many flat game world performance gaining solutions. <br />
+Extended build times can hinder productivity. Despite its distinct challenges, VR development benefits from numerous performance-enhancing solutions that are commonly employed in the flat game world. <br />
 
 ## When to Optimise?
 * Optimise from the beginning!
