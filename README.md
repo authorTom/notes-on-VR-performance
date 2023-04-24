@@ -57,7 +57,7 @@ Lengthy build times can stifle productivity and standalone headset testing is vi
 ### CPU or GPU Bound?
 The first questions to ask yourself; Whats causing the problem? is it CPU or GPU bound? <br />
 ```
-Small tip: display frame rate in UE Editor
+Quick tip: display frame rate in UE Editor
 CTL + Shift + H
 ```
 
@@ -122,15 +122,34 @@ Data taken from [Meta](https://developer.oculus.com/documentation/unreal/unreal-
 <br />
 
 ## Tip 1 - Reduce Draw Calls
-A draw call is a command to the GPU, instructing it to render a specific set of graphical elements, such as textures or polygons, onto the screen. <br />
+* A draw call is a command to the GPU, instructing it to render a specific set of graphical elements, such as textures or polygons.
+* GPU handles most graphics computations, but CPU controls it.
+* Too many draw calls can bottleneck performance.
+* Batching combines calls for identical meshes and parameters.
+* Static batching is effective for unchanging, static scene parts.
+* Unity engine uses static batching; can affect culling negatively if overused.
+* Unreal Engine sorts objects by mesh and shader parameters for more flexibility.
+* Effectiveness depends on unique meshes and materials in scene.
+* Having modular environment art reduces draw calls.
 * Less is better. Thresholds are dependent on headset specifications. 
-* When developing for Quest 2 some recommend targeting draw calls <100 per frame.
+* For Quest 2 some recommend targeting draw calls <100 per frame.
+
+```
+Quick Tip: Unreal Engine - to check draw call counts in the editor run the "stat SceneRendering" command.
+```
 
 #### Solution - Batching draw calls
-A big restriction with batching is that you need to use the same texture(s). You can't have different textures for the same original draw call. <br />
    * Static batching
    * Dynamic batching
 #### Solution - GPU instancing
+* GPU instancing is an extreme form of batching.
+* Single mesh loaded, multiple copies stamped.
+* Minimal CPU overhead.
+* Limitations:
+* Position, rotation, scale can change.
+* Same material/properties for all instances.
+* Specifics can depend on the engine.
+
 <br />
 
 ## Tip 2 - Textures & Materials
