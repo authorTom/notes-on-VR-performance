@@ -146,9 +146,9 @@ Quick Tip: Unreal Engine - to check draw call counts in the editor run the "stat
 * Single mesh loaded, multiple copies stamped.
 * Minimal CPU overhead.
 * Limitations:
-* Position, rotation, scale can change.
-* Same material/properties for all instances.
-* Specifics can depend on the engine.
+   * Position, rotation, scale can change.
+   * Same material/properties for all instances.
+   * Specifics can depend on the engine.
 
 <br />
 
