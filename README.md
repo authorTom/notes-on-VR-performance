@@ -56,10 +56,6 @@ Extended build times can hinder productivity. Despite its distinct challenges, V
 <br />
 ### CPU or GPU Bound?
 The first questions to ask yourself; Whats causing the problem? is it CPU or GPU bound? <br />
-```
-Quick tip: display frame rate in UE Editor
-CTL + Shift + H
-```
 
 **CPU Bound** <br />
 Performance primarily limited by the CPU's processing power can be caused by: <br />
@@ -81,8 +77,7 @@ Performance limited by the GPU's rendering capabilities can be caused by: <br />
 
 To determine whether the performance issue stems from a vertex or fragment-related problem, attempt rendering fewer pixels by setting the render scale to 0.01. This approach will reduce the number of fragments rendered while maintaining the complexity. <br />
 ```
-Unreal profiler for the GPU
-CTRL + Shift + Comma
+vr.PixelDensity 0.01
 ```
 Common causes of vertex bound performance <br />
 * Culling objects are taking too long
@@ -99,8 +94,7 @@ Change one thing at a time and re-profile. Test, test and test some more. Making
 If fragment bound, optimise shaders to address pixel complexity. <br />
 
 ## Performance on Standalone VR
-When developing for standalone VR get a feel for the numbers. Look at headset recommendations and limitations.
-<br />
+When developing for standalone VR get a feel for the numbers and look at headset recommendations and limitations. Recommended draw calls for PCVR is around 1000. <br />
 
 | Platform | Draw Calls | Description |
 |-----|-----|-----|
@@ -119,6 +113,15 @@ Both Quest 1 & 2 have a recommended minimum of 72FPS. <br/>
 | Quest 2 | 750k-1M |
 
 Data taken from [Meta](https://developer.oculus.com/documentation/unreal/unreal-debug-android/)
+<br />
+## Useful profiling commands (Unreal Engine)
+| Command | Function |
+|-----|-----| 
+| Stat Unit | Displays performance information for the project's frame, game, draw, GPU, RHIT, and DynRes threads |
+| Stat FPS | Displays frames per second and average frame time |
+| Stat RHI | Displays RHI memory and performance statistics)
+| Stat SceneRendering | Displays general rendering statistics. This is a good starting point to find general areas of slow performance in the rendering process |
+| Stat GPU | Displays GPU statistics for the frame |
 <br />
 
 ## Tip 1 - Reduce Draw Calls
