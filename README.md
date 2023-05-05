@@ -1,4 +1,4 @@
-# Notes on VR Performance
+# Notes on VR Performance (First Draft)
 Performance is crucial for developing high-quality VR content, as it helps prevent user discomfort, motion sickness, and enhances realism. Ensuring smooth operation and prioritizing optimal frame rates are essential aspects of VR development that are often overlooked. Inadequate frame rates or inconsistent frame times can result in subpar user experiences and contribute to motion sickness. <br />
 
 Crafting high-performance content is no easy task, PCVR (powerful gaming PCs) and standalone VR (modest mobile headsets) demand different approaches. These notes focus on standalone optimisation, specifically for the Oculus Quest ecosystem. Note, different headsets carry unique requirements. Performance hinges on numerous factors: the need for high resolutions, double frames, power constraints, limited processing, rendering power, and the weight of thermal throttling. <br />
