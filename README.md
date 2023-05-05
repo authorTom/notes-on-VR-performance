@@ -24,12 +24,13 @@ Extended build times can hinder productivity. Despite its distinct challenges, V
 * Frame time is a better measure of performance than frame rate because it takes into account the consistency of the frame rate. A high frame rate does not necessarily mean that the game will be smooth, if the frame time is inconsistent. For example, a game may have a frame rate of 60fps, but if the frame time varies from 16ms to 33ms, the game will not be smooth. <br />
 * Frame time is useful for diagnosing performance issues. If you are experiencing stuttering or other performance problems, you can use frame time to identify the source of the problem. <br />
 * Headsets have different required frame rates. When the frame rates drop, it's likely to cause disorientation and nausea for the user. Maintaining a minimum frame rate (reducing frame times) can be particularly challenging on a standalone headset. <br />
+* Most PCVR runs at 90fps. Standalone is usually 72fps (but can be as high as 120fps). <br />
   <br />
   | Headset | Frame Rate |
   |---------|--------------------------------|
   |HTC Vive|90|
   |Quest 1 |72|
-  |Quest 2 |120|
+  |Quest 2 |upto 120|
   |Quest Pro|90|
   |Valve Index|upto 144|
 ## Profiling
@@ -123,6 +124,18 @@ Data taken from [Meta](https://developer.oculus.com/documentation/unreal/unreal-
 | Stat SceneRendering | Displays general rendering statistics. This is a good starting point to find general areas of slow performance in the rendering process |
 | Stat GPU | Displays GPU statistics for the frame |
 <br />
+
+## Scene and VR Project Settings Within Unreal Engine 
+```
+Project Settings > Engine > Rendering > VR
+
+Dynamic Fixed Foveation (enable)
+Instanced stereo (enable)
+Mobile Multiview (enable)
+Round Robin Occlusion Queries (enable)
+```
+<br />
+Mobile HDR allows for post processing in a standalone headset but can be very expensive and not all headsets support this. Round Robin Occlusion (RRO) improves VR performance by alternating rendering occlusion between one eye each frame instead of both, at the cost of a single frame of latency. To optimise stereo rendering on the CPU, use instanced stereo for desktop and mobile multiview for mobile. <br />
 
 ## Tip 1 - Reduce Draw Calls
 * A draw call is a command to the GPU, instructing it to render a specific set of graphical elements, such as textures or polygons.
