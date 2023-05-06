@@ -1,4 +1,4 @@
-# Notes on VR Performance (First Draft)
+# Notes on VR Performance
 Performance is crucial for developing high-quality VR content, as it helps prevent user discomfort, motion sickness, and enhances realism. Ensuring smooth operation and prioritizing optimal frame rates are essential aspects of VR development that are often overlooked. Inadequate frame rates or inconsistent frame times can result in subpar user experiences and contribute to motion sickness. <br />
 
 Crafting high-performance content is no easy task, PCVR (powerful gaming PCs) and standalone VR (modest mobile headsets) demand different approaches. These notes focus on standalone optimisation, specifically for the Oculus Quest ecosystem. Note, different headsets carry unique requirements. Performance hinges on numerous factors: the need for high resolutions, double frames, power constraints, limited processing, rendering power, and the weight of thermal throttling. <br />
@@ -133,9 +133,22 @@ Dynamic Fixed Foveation (enable)
 Instanced stereo (enable)
 Mobile Multiview (enable)
 Round Robin Occlusion Queries (enable)
+
+Project Settings > Engine > Rendering
+
+Forward shading (enable)
+Vertex fogging for opaque (enable)
+Anti-aliasing = MSAA
+MSAA sample count = 4x
+
+Project Settings > Project > Target Hardware
+
+Optimise project settings for 'mobile' and 'scalable'
+
+*These settings are optimal for mobile/standalone
 ```
 <br />
-Mobile HDR allows for post processing in a standalone headset but can be very expensive and not all headsets support this. Round Robin Occlusion (RRO) improves VR performance by alternating rendering occlusion between one eye each frame instead of both, at the cost of a single frame of latency. To optimise stereo rendering on the CPU, use instanced stereo for desktop and mobile multiview for mobile. <br />
+Mobile HDR allows for post processing in a standalone headset but can be very expensive and not all headsets support this. Round Robin Occlusion (RRO) improves VR performance by alternating rendering occlusion between one eye each frame instead of both, at the cost of a single frame of latency. To optimise stereo rendering on the CPU, use instanced stereo for desktop and mobile multiview for mobile. Forward rendering has improved performance over deferred rendering if most lighting is baked. MSAA anti-aliasing produces less blur that TAA. <br />
 
 ## Tip 1 - Reduce Draw Calls
 * A draw call is a command to the GPU, instructing it to render a specific set of graphical elements, such as textures or polygons.
